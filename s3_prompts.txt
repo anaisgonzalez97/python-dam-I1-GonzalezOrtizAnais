@@ -1,3 +1,13 @@
+PROMPTS PERFYL.PY:
+
 -1er prompt
 
 Genérame en python en el que : se pida nombre,m año de nacimiento, calcule la edad, la clasifique por tramo (-18, 18 -65, +65) y maneje errores si no mete se número.
+
+
+PROMPTS ECO_IO.PY
+
+- 1er prompt
+
+En python creame un proyecto en el que tengo que pedir 3 números, mostrar suma, media y mayor con una explicación sencilla teniendo en cuenta que es de las primeras veces que utilizo 
+este lenguaje, pues suelo utilizar java
