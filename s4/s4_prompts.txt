@@ -1,0 +1,16 @@
+Para lista numeros.py:
+
+Escribe un programa que pida una lista de números separados por comas, convierta a floats, calcule suma, media y máximo, y detecte duplicados de una forma sencilla.
+
+Para temperaturas.py:
+
+Genérame un programa en Python que sea sencillo de entender para alguien que recién empieza en Python (con comentarios para entender mejor, si es posible) que sea un conversor de temperaturas de grados a kelvin o a
+farenheit.
+
+Para cadenas.py:
+
+Genera un programa en python que sea sencillo de entender que reciba una cadena y cuente las vocales que tiene, las consonantes, las mayúsculas y el número de caracteres
+
+Para primos.py:
+
+Genérame un programa muy sencillo en python que reciba un número y nos diga si es primo o no
