@@ -18,7 +18,7 @@ def analizar_calificaciones():
             # Pedir las calificaciones como texto separado por comas
             entrada = input("Ingresa las calificaciones separadas por comas: ")
             
-            # Convertir a string y limpiar espacios en blanco
+            # Separamos por comas y limpiar espacios en blanco
             lista_texto = [nota.strip() for nota in entrada.split(",")]
             
             # Convertir a números decimales (float)
