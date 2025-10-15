@@ -1,7 +1,6 @@
 """
 Programa: Análisis de Calificaciones
 Descripción: Analiza una lista de notas y genera un boletín estadístico
-Autor: Para principiantes en Python
 """
 
 def analizar_calificaciones():
@@ -17,7 +16,7 @@ def analizar_calificaciones():
     while True:
         try:
             # Pedir las calificaciones como texto separado por comas
-            entrada = input("Ingresa las calificaciones separadas por comas (ej: 6.5, 8, 5, 4, 9): ")
+            entrada = input("Ingresa las calificaciones separadas por comas: ")
             
             # Convertir a string y limpiar espacios en blanco
             lista_texto = [nota.strip() for nota in entrada.split(",")]
