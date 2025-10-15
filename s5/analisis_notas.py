@@ -19,7 +19,7 @@ def analizar_calificaciones():
             entrada = input("Ingresa las calificaciones separadas por comas: ")
             
             # Separamos por comas y limpiar espacios en blanco
-            lista_texto = [nota.strip() for nota in entrada.split(",")]
+            lista_texto = [nota.strip() for nota in entrada.split(",")] #split(",") -> cada vez que encuentra una coma lo divide en un trozo
             
             # Convertir a números decimales (float)
             calificaciones = []
@@ -61,14 +61,22 @@ def analizar_calificaciones():
     # Moda (nota más repetida)
     frecuencia = {} #Crear diccionario vacío
     for nota in calificaciones:
-        frecuencia[nota] = frecuencia.get(nota, 0) + 1
-        #busca la nota en el diccionario Si la nota EXISTE: devuelve su valor actual; Si la nota NO EXISTE: devuelve 0. Suma 1 al valor obtenido y guarda el nuevo valor en el diccionario
+        frecuencia[nota] = frecuencia.get(nota, 0) + 1 #contar apariciones
+        #busca la nota en el diccionario Si la nota EXISTE: devuelve su valor actual; 
+        # Si la nota NO EXISTE: devuelve 0. Suma 1 al valor obtenido 
+        # y guarda el nuevo valor en el diccionario
     
     # Encontrar la máxima frecuencia
     max_frecuencia = max(frecuencia.values())
     
     # Encontrar todas las notas con esa frecuencia (puede haber empate)
-    modas = [nota for nota, freq in frecuencia.items() if freq == max_frecuencia]
+    modas = []
+    # Recorrer cada par (nota, frecuencia) del diccionario
+    for nota, freq in frecuencia.items():
+        # Si la frecuencia de esta nota es igual a la frecuencia máxima
+        if freq == max_frecuencia:
+            # Agregar esta nota a la lista de modas
+            modas.append(nota)
     
     # ========== MOSTRAR RESULTADOS ==========
     
