@@ -51,5 +51,5 @@ def calcular_edad():
     print("="*40)
 
 # Ejecutar el programa
-if __name__ == "__main__":
+if __name__ == "__main__": # Solo haz estos pasos si este es el papel principal
     calcular_edad()
